@@ -1,0 +1,88 @@
+.menu {
+    width: 100%;
+    padding: 15px 0 25px 0;
+}
+.menu ul li {
+    width: 25%;
+    height: 85px;
+    padding: 15px 0 0 0 ;
+    float: left;
+}
+.menu ul li .p1 {
+    height: 50px;
+    text-align: center;
+}
+.menu ul li .p2 {
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+.menu ul li p img {
+    width: 50px;
+    height: 50px;
+}
+.checkShow {
+    display: none;
+}
+.recommend {
+    background-color: #f1f1f1;
+    padding-bottom: 20px;
+}
+.recommend ul li {
+    width: 100%;
+    height: 128px;
+    padding:14px 8px ;
+    position: relative;
+    background-color: #fff;
+}
+.recommend ul li .tuijianLeft {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+.recommend ul li .tuijianLeft img{
+    width: 100px;
+    height: 100px;
+}
+.recommend ul li .tuijianRight {
+    width: 100%;
+    height: 100px;
+    padding-left: 100px;
+}
+.recommend ul li .tuijianRight .p1 {
+    height: 57px;
+    padding-left: 10px;
+    padding-top: 10px;
+    line-height: 15px;
+    font-size: 12px;
+}
+.recommend ul li .tuijianRight .p1 span {
+    color: red;
+}
+.recommend ul li .tuijianRight .p2 {
+    padding-left: 10px;
+    font-size: 10px;
+    color: #aaa;
+}
+.recommend ul li .tuijianRight .p2 .pinglun {
+    float: right;
+    color: #874604;
+    margin-right: 20px;
+}
+.recommend .message {
+    height: 30px;
+    margin-top: 10px;
+}
+.recommend .message p {
+    margin: 0 10px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
+}

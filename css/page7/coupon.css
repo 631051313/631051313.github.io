@@ -1,0 +1,133 @@
+
+/*头部部分*/
+.head{
+    height: 44px;
+    background-color: #f4483e;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+.head h1{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.head >.back{
+    width: 50px;
+    height: 44px;
+    left:0;
+    top:0;
+    position: absolute;
+}
+.head >.download{
+    position: absolute;
+    width: 50px;
+    height: 44px;
+    right:0;
+    top:0;
+}
+.head >.back > a,.head >.download > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 44px;
+    text-align: center;
+}
+.head >.back > a::before{
+    content: "\e257";
+    color:#fff;
+    font-size: 20px;
+}
+.head > .download > a{
+    background: url(../../images/header_app.png) no-repeat 5px 5px;
+    background-size: 36px 36px;
+}
+/*中间优惠券部分*/
+.container{
+    padding-top:10px;
+}
+.container > .row{
+    height: 100%;
+}
+.container > .row{
+    height: 100%;
+}
+.container > .row .active{
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+}
+.container > .row .active_box{
+    height: 75px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+.container > .row .active_box > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container > .row .active_box > a > img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+/*底部部分*/
+.foot .foot_nav{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding-left: 8px;
+    margin: 20px 0;
+    background: linear-gradient(#fff,#ededed);
+}
+.foot .foot_nav a{
+    color:#5a5a5a;
+    text-decoration: none;
+}
+.foot .foot_info{
+    background-color: #f2f2f2;
+    padding-bottom: 15px;
+}
+.foot .foot_info ul{
+    width: 100%;
+    height: 34px;
+    margin-bottom: 15px;
+}
+.foot .foot_info li{
+    padding: 0;
+}
+.foot .foot_info li a{
+    display: block;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left:none;
+    color:#000;
+}
+.foot .foot_info p{
+    text-align: center;
+    font-size: 12px;
+}
+.foot .foot_info p a:nth-of-type(1){
+    color:#f00;
+}
+.foot .foot_info p a:nth-of-type(2){
+    color:#000;
+}
+.foot .foot_info p a:nth-of-type(3){
+    color:#ccc;
+}

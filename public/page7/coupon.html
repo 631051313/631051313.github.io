@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>07-优惠券</title>
+    <link href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/page7/coupon.css">
+    <link rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+<div class="head">
+    <div class="back"><a href="#" class="glyphicon glyphicon-menu-left"></a></div>
+    <h1>优惠券</h1>
+    <div class="download"><a href="#"></a></div>
+</div>
+<div class="body container">
+    <div class="row" id="coupon_body">
+            <!--图片渲染-->
+    </div>
+</div>
+<div class="foot">
+    <!--底部导航栏-->
+    <div class="foot_nav">
+        <a href="../../index.html">首页 > </a>
+        <a href="#">优惠券</a>
+        <!--<a href="#">肯德基优惠券</a>-->
+    </div>
+    <div class="foot_info">
+        <ul>
+            <li class="col-xs-4"><a href="#">登录</a></li>
+            <li class="col-xs-4"><a href="#">注册</a></li>
+            <li class="col-xs-4"><a href="#">返回顶部</a></li>
+        </ul>
+       <p><a href="#">手机APP下载&nbsp</a><a href="#">慢慢买手机版&nbsp</a><span>--掌上比价平台</span></p>
+       <p>m.manmanbuy.com</p>
+    </div>
+</div>
+<script type="text/template" id="coupon">
+{{each result as v i}}
+    <div class="col-xs-4 col-sm-3 active">
+        <div class="active_box">
+            <a href="{{v.couponLink}}?{{v.couponId}}" class="couponId"><img src="{{v.couponImg}}" alt=""/><span>{{v.couponTitle}}</span></a>
+        </div>
+    </div>
+{{/each}}
+</script>
+<script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../node_modules/template.js"></script>
+<script src="../../js/page7/coupon.js"></script>
+</body>
+</html>

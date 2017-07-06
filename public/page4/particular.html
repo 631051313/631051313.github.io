@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>国内折扣</title>
+    <link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/page4/particular.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="pal-header">
+        <a href="javascript:;" id="pal_return" class="glyphicon glyphicon-menu-left pal-icon"></a>
+        <h1 class="pal-title">国内折扣</h1>
+        <a href="javascript:;" class="pal-app"></a>
+    </div>
+
+    <!-- 内容 -->
+    <div class="pal-content">
+
+    </div>
+    <footer>
+        <div class="footerBottom">
+            <div class="footerBottomTop">
+                <a href="#" class="a1">登录</a>
+                <a href="#" class="a2">注册</a>
+                <a href="#" class="a3"><img src="../../images/top.jpg" alt=""/>&nbsp;返回顶部</a>
+            </div>
+            <div class="footerBottomB">
+                <p><a href="#">手机APP下载</a> <span>慢慢买手机版--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+    <script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../../js/page4/particular.js"></script>
+    <script src="../../node_modules/template.js"></script>
+    <script type="text/template" id="template">
+        {{each result as v i}}
+         <div class="pal-center">
+            <h3 class="pal-content-title" id="title">{{v.productName}}</h3>
+            <h4 class="pal-money">{{v.productPrice}}</h4>
+            <div class="pal-info">
+                <span>{{v.productFrom}}</span>
+                <span>{{v.productTime}}</span>
+                <span>{{v.productTips}}</span>
+            </div>
+            <div class="pal-present clearfix">
+                <div class="pal-img">
+                    {{#v.productImg}}
+                </div>
+                <div class="pal-ps-content">
+                    {{#v.productInfo}}
+                    {{#v.productInfo1}}
+                    {{#v.productInfo2}}
+
+                </div>
+            </div>
+        </div>
+        <div class="pal-btn">
+            <a href="javascript:;">前往购买</a>
+        </div>
+        <div class="pal-comment">
+            {{#v.productComment}}
+        </div>
+        <div class="crumbs">
+
+        </div>
+
+        <div class="ls-crumbs">
+            <div class="ls-x-crumbs">
+                <a href="../../index.html">首页</a>
+                &nbsp;>&nbsp;
+                <a href="discount.html">超值推荐</a>
+                &nbsp;>&nbsp;<span id="ls-crumbs-add"></span>
+            </div>
+        </div>
+
+
+        <div class="appbanner  appbannerc" id="Div1">
+    <div class="applogo"><img src="http://m.manmanbuy.com/download/images/logo.png" /></div>
+    <div class="tit">
+        慢慢买APP
+        <div class="subtit" style="">
+            <p>专注全网比价，每一次购物都在为你省钱！</p>
+
+        </div>
+    </div>
+    <div class="btn">
+    <a href="http://m.manmanbuy.com/?o=download" class="a-install">立即打开</a>
+    </div>
+</div>
+</div>
+    <div id="ctl00_footerApp">
+        <div class="foot_top">
+
+        {{/each}}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/bijiaList.css"/>
+    <script src="../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- top顶部-->
+        <div class="header">
+            <a href="#" class="log">
+                <h1>慢慢买比价网</h1>
+            </a>
+            <a href="#" class="downUp"></a>
+        </div>
+        <!-- 头部搜索框-->
+        <div class="searchBox">
+            <input type="text" placeholder="请输入你想比价的商品" class="search"/>
+            <input type="submit" class="submit" value="搜索"/>
+        </div>
+    </header>
+
+    <div class="bijiaMianbaoxie">
+        <a href="../index.html">首页</a>
+        <span>></span>
+        <a href="../public/bijia.html">全部分类</a>
+        <span>></span>
+        <a href="" class="bijiaMBXname"></a>
+    </div>
+
+    <div class="recommend">
+        <ul id="bijialistUl">
+
+        </ul>
+        <div class="pageBtn">
+            <div class="pageLeft"><a href="javascript:;" id="pageLeftBtn">上一页</a></div>
+            <div class="pageSelect">
+                <select id="pageBox">
+                </select>
+            </div>
+            <div class="pageRight"><a href="javascript:;" id="pageRightBtn">下一页</a></div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="#">
+            <div class="footerComment mianbaoxie">
+                <span>首页</span> > <span>省钱控</span>
+            </div>
+        </a>
+        <div class="footerBottom">
+            <div class="footerBottomTop">
+                <a href="#" class="a1">登录</a>
+                <a href="#" class="a2">注册</a>
+                <a href="#" class="a3"><img src="../images/top.jpg" alt=""/>&nbsp;返回顶部</a>
+            </div>
+            <div class="footerBottomB">
+                <p><a href="#">手机APP下载</a> <span>慢慢买手机版--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../node_modules/template-native.js"></script>
+<script src="../js/bijiaList.js"></script>
+
+<script type="text/template" id="bijiaListTemplate">
+    <%for(var i=0;i< result.length ; i++){%>
+    <li>
+        <!--<a href="../public/zl.html?id=<%=result[i].productId%>">-->
+        <a href="javascript:;">
+            <div class="tuijianLeft"><%=#result[i].productImg%></div>
+            <div class="tuijianRight">
+                <p class="p1"><%=#result[i].productName%></span> </p>
+                <p class="p2"><%=#result[i].productPrice%></p>
+                <p class="p3"><span><%=#result[i].productQuote%></span><span class="right"><%=#result[i].productCom%></span></p>
+            </div>
+        </a>
+    </li>
+    <%}%>
+</script>
+</html>

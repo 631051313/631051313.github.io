@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/pageZJY/nav.css" />
+    <script src="../../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+</head>
+<body>
+    
+    <div class="container-fluid top" >
+    		<div class="row">
+			<div class="col-xs-4">
+				<i id="back" class="glyphicon glyphicon-chevron-left conlfet"></i>
+				</div>
+				<div class="col-xs-6 topnb">国内折扣</div>
+					<div class="col-xs-2">
+						<img src="../../images/header_app.png"  id="tu"/>
+					</div>
+			</div>
+    	</div>	
+    
+    	<div class="container" id="con">
+    		
+    		
+    		
+    	</div>
+    
+    <div id="ctl00_Menu" class="nav" style="margin-top:20px;"><a href="http://m.manmanbuy.com">首页</a>&nbsp;&gt;&nbsp;
+<a href="http://m.manmanbuy.com/hzsite.aspx">商城导航</a>
+</div>
+    <div class="container-fluid" id="bot">
+    		<div class="col-xs-4">登陆</div>
+    		<div class="col-xs-4">注册</div>
+    		<div class="col-xs-4">返回顶部</div>
+    	</div>
+    	<div id="bott" class="container">
+    		<p><span style="color: red;"> 手机APP下载</span>&nbsp;<span style="color: #000000;">慢慢买手机版</span>--掌上比价平台</p>
+    			<p><a href="#">m manmanbuy.com</a></p>
+    	</div>
+    
+    
+</body>
+<script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+     <script src="../../js/pageZJY/iscroll.js"></script>
+<script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../js/pageZJY/fastclick.js"></script>
+ <script src="../../js/pageZJY/nav.js"></script>
+<script src="../../js/pageZJY/template-debug.js"></script>
+<!--<script type="text/template" id="ron"></script>-->
+<script type="text/template" id="quan">
+	<ul id="dao">
+	{{each result as v i}}
+		<li>
+			<a href="{{v.navHref}}">
+				<img src="{{v.navImg}}" />					
+				<span>{{v.navTitle}}</span>
+			</a>	
+		</li>
+	{{/each}}
+	</ul>
+</script>	
+	
+	
+	
+</html>

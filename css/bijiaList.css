@@ -1,0 +1,124 @@
+header .backBtn {
+    position: absolute;
+    width: 44px;
+    height: 50px;
+    top: 0;
+    left: 10px;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 25px;
+}
+.SQKheader {
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.recommend {
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+}
+.recommend ul li {
+    width: 100%;
+    height: 128px;
+    padding:14px 8px ;
+    position: relative;
+    background-color: #fff;
+}
+.recommend ul li .tuijianLeft {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+.recommend ul li .tuijianLeft img{
+    width: 100px;
+    height: 100px;
+}
+.recommend ul li .tuijianRight {
+    width: 100%;
+    height: 100px;
+    padding-left: 100px;
+}
+.recommend ul li .tuijianRight .p1 {
+    height: 57px;
+    padding-left: 10px;
+    padding-top: 10px;
+    line-height: 15px;
+    font-size: 14px;
+    color: #000;
+}
+.recommend ul li .tuijianRight .p2 {
+    padding-left: 10px;
+    font-size: 18px;
+    color: red;
+}
+.recommend ul li .tuijianRight .p3 {
+    padding-left: 10px;
+    color: #777;
+}
+.recommend ul li .tuijianRight .p3 .right {
+    float: right;
+    margin-right: 20px;
+}
+.recommend .pageBtn{
+    margin-top: 20px;
+    height: 33px;
+}
+.recommend .pageBtn div {
+    float: left;
+    height: 33px;
+}
+
+.recommend .pageBtn .pageLeft{
+    width: 30%;
+}
+.recommend .pageBtn .pageSelect{
+    width: 40%;
+}
+.recommend .pageBtn .pageRight{
+    width: 30%;
+}
+.recommend .pageBtn div a {
+    display: block;
+    margin: 0 auto;
+    width: 82px;
+    height: 33px;
+    background-color: #d4d4d4;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 10px;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+    border: 1px solid #cccccc;
+    color: #000;
+    cursor: pointer!important;
+}
+.recommend .pageBtn div select {
+    width: 80px;
+    height: 33px;
+    margin: 0 auto;
+    display: block;
+}
+.footerComment,.mianbaoxie{
+    background-color: #fff;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+}
+.footerComment,.mianbaoxie span{
+    font-size: 14px;
+    color: #000;
+}
+a{
+    text-decoration: none!important;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.bijiaMianbaoxie {
+    height: 30px;
+    background-color: #eeeeee;
+    width: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+}

@@ -1,0 +1,297 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+a{
+	text-decoration: none;
+	
+}
+
+#bcnav {
+	
+	height: 50px;
+	line-height: 50px;
+	/*position: absolute;*/
+	/*left: 0;*/
+}
+
+.top{
+		height: 50px;
+		background-color: rgba(255,0,0,.5);
+		line-height: 50px;
+}
+.conlfet{
+	font-size: 20px;
+	color: white;
+}
+.topnb{
+	font-size: 20px;
+	color: white;
+}
+#tu{
+	width: 34px;
+	height: 34px;
+}
+.bao{
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #CCCCCC;
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+.bao li{
+	float: left;
+	margin-right: 20px;
+	height: 50px;
+	line-height: 50px;
+	
+}
+#dsad{
+	width:730px;
+	/*position: absolute;*/
+	position: relative;
+	left: 0;
+	
+}
+.currentli{
+	color: red;
+	border-bottom: 1px solid red;
+}
+#dsad a{
+	display: block;
+	height: 50px;
+	font-family:"微软雅黑" ;
+}
+.biaolist{
+	padding-left: 5px;
+	margin-top: 10px;
+}
+.biaolist>div{
+	padding-left:0 ;
+}
+.bor .d1{
+	width: 100px;
+	height: 15px;
+	border-radius: 20px;
+	background-color: rgba(255,0,0,.5);
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	color: white;
+	line-height: 15px;
+}
+.bor{
+	position: relative;
+	    overflow: hidden;
+	        padding: 10px 0 10px;
+}
+
+.bor .d2{
+	
+	width: 30px;
+	height: 15px;
+	border-radius: 20px;
+	background-color: red;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+}
+.bor+p{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: red;
+	margin-bottom: 5px;
+}
+.youhui a:first-of-type{
+	
+	display:inline-block;
+	border: 1px dashed red;
+	font:12px "微软雅黑";
+	padding:5px;
+	color: red;
+	
+}
+.youhui a:last-of-type{
+	display:inline-block;
+	border: 1px solid red;
+	border-radius:5px ;
+	font:12px "微软雅黑";
+	padding: 5px;
+	color: white;
+	background-color: red;	
+}
+/*.baoyou{
+	line-height: 10px;
+	
+}*/
+
+.baoyou> p:nth-of-type(1){
+	font: 16px "微软雅黑";
+		margin-bottom: 5px;
+	
+}
+.baoyou p span:first-child{
+	font-size: 17px ;
+	color: red;
+	
+	
+}
+.baoyou p span.zhi{
+	font-size: 25px ;
+	color: red;
+	
+}
+.baoyou p span.qwe{
+	
+	font-size: 15px;
+	color: #CCCCCC;
+	
+}
+
+
+
+.op{
+	position: relative;
+}
+.ylq{
+	font: 12px "微软雅黑";
+	color: red;
+	
+}
+
+#listall{
+	padding-left:0;
+	padding-right:0;
+	margin-bottom: 5px;
+}
+#listall img{
+	width: 100%;
+}
+/*.bar.clearfix{
+	float: right;
+	
+}*/
+.pri{
+	color: red;
+	font-size: 20px;
+}
+
+.prn span.b {
+	font-weight: bold;
+}
+
+.pri i:first-child{
+	font-size: 12px;
+	font-style: normal;
+	color: red;
+	
+}
+
+.pri em{
+	color: red;
+	font-size:12px;
+	margin-left: 5px;
+	
+}
+.pri del{
+	font-size: 12px;
+	color: #C0C0C0;
+	margin-left: 15px;
+}
+.bor i{
+	display: inline-block;
+	width: 60%;
+	background-color:rgba(255,0,0,.5);
+	border-radius: 10px;
+	color: white;
+	font-style: normal;
+	font-size: 12px;
+	text-align: left;
+	height: 20px;
+	position: relative;
+	
+}
+
+
+.bor em{
+	display: inline-block;
+	height: 100%;
+	/*background-color:rgba(255,0,0);*/
+	background-color: red;
+	border-radius: 10px;
+}
+.bor b{
+	
+	/*width: 100%;
+	background-color:rgba(255,0,0,.5);*/
+	font-weight: normal;
+	font-size: 12px;
+	color: red;
+	float: right;
+	/*position: absolute;
+	left: 0;
+	top: 0;*/
+	
+	
+}
+.bor span{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.zxc a{
+	display: inline-block;
+	border: 1px dashed red;
+	padding: 5px;
+	color: red;
+}
+.cxz a{
+	float: right;
+	display: inline-block;
+	padding: 8px 5px;
+	background-color: red;
+	color: white;
+	border-radius: 10px;
+	font-size: 12px;
+}
+
+#bot{
+	padding: 0;
+	margin: 0;
+	
+}
+#bot div{
+	text-align: center;
+	border-top: 1px solid #C0C0C0;
+	border-left: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+	height: 30px;
+	line-height: 30px;
+}
+#bott{
+	text-align: center;
+	padding-top: 10px;
+	height:50px;
+	line-height: 20px;
+}
+#wrapper a{
+	text-decoration: none;
+}

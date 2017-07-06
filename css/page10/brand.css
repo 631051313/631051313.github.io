@@ -1,0 +1,125 @@
+/*头部部分*/
+.head{
+    height: 50px;
+    width: 100%;
+    padding-left: 5px;
+    background-color: #ff841d;
+}
+.head .back{
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding: 12px 12px;
+}
+.head .back .header_logo{
+    display: block;
+    width: 100%;
+    height: 25px;
+    background: url(../../images/header_logo.png) no-repeat;
+    background-size: 186px 25px;
+}
+.head >.download{
+    width: 50px;
+    height: 44px;
+    float: right;
+}
+.head >.download > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 44px;
+    text-align: center;
+    background: url(../../images/header_app.png) no-repeat 5px 5px;
+    background-size: 36px 36px;
+}
+/*搜索部分*/
+.search1{
+    padding: 10px;
+    position: relative;
+}
+.search1 .search_left{
+    width: 90%;
+    height: 30px;
+    float: left;
+}
+.search1 .search_left input{
+    width: 100%;
+    height: 100%;
+    float: left;
+    border:none;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    outline: none;
+    padding-left: 5%;
+}
+.search1 .search_right{
+    width: 63px;
+    height: 30px;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.search1 .search_right input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+    background-color: #ff841d;
+    border-radius: 15px;
+    color:#fff;
+}
+/*首页品牌大全*/
+#allForm{
+    background-color: #ededed;
+}
+#allForm .nav{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding-left: 8px;
+    background: linear-gradient(#fff,#ededed);
+}
+#allForm .nav a{
+    color:#5a5a5a;
+    text-decoration: none;
+}
+#allForm .hot{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    color:#874604;
+    background-color: #ebebeb;
+}
+/*首页品牌列表*/
+#allForm .list_body{
+    padding: 0 10px;
+}
+#allForm .list_body .list{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+#allForm .list_body .list a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-family:"Helvetica Neue", Helvetica, STHeiTi, sans-serif ;
+    font-size: 16px;
+    font-weight: 700;
+    color:#000;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    position: absolute;
+}
+#allForm .list_body .list span{
+    position: absolute;
+    top: 30%;
+    right:20px;
+}
+
+

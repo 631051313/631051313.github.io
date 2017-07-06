@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/pageZJY/index.css" />
+	<script src="../../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid top" >
+    		<div class="row">
+			<div class="col-xs-4">
+				<i id="back" class="glyphicon glyphicon-chevron-left conlfet"></i>
+				</div>
+				<div class="col-xs-6 topnb">筹单品</div>
+					<div class="col-xs-2">
+						<img src="../../images/header_app.png"  id="tu"/>
+					</div>
+			</div>
+    	</div>	
+    	
+    	<div class="container-fluid" id="nav">
+			<select class="col-xs-4 navs" id="dian">
+			</select>   
+			<select class="col-xs-4 navs" id="di">
+				
+			</select>    
+			<select class="col-xs-4 navs" id="jg">
+				<option>全部</option>
+			</select>    		
+    	</div>
+    	
+    	<div class="container" id="zhao">
+    		
+    		
+    		
+    	</div>
+    	
+    	
+		
+		
+		
+
+<script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../../js/pageZJY/iscroll.js"></script>
+<script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../js/pageZJY/fastclick.js"></script>
+<script src="../../js/pageZJY/template-debug.js"></script>
+ <script src="../../js/pageZJY/san.js"></script>
+ <script type="text/template" id="zxc">
+ 			{{each result as v i}}
+ 			<option value="{{v.shopId}}">{{v.shopName}}</option>
+ 			{{/each}}
+ </script>
+ 
+  <script type="text/template" id="a">
+ 			{{each result as v i}}
+ 			<option value="{{v.areaId}}">{{v.areaName}}</option>
+ 			{{/each}}
+ </script>
+ <script type="text/template" id="pl">
+ 	{{each result as v i}}
+ 	
+ 	{{if i%2==0}}
+ 	<div class="xs ma pull-left">
+ 		<!--<div class="col-xs-6">-->
+ 		<div><img id="im" src="{{v.productImg}}"></div>
+ 		<div class="font">
+ 			{{v.productName}}
+ 		</div>
+ 		<div>
+ 			<span class="jg">{{v.productPrice}}</span>
+ 			<button class="pull-right bb">去筹单</button>
+ 			
+ 		</div>
+ 	</div>
+ 	{{/if}}
+ 	
+ 	{{if i%2!=0}}
+ 	<div class="xs ma pull-right">
+ 		<!--<div class="col-xs-6">-->
+ 		<div><img id="im" src="{{v.productImg}}"></div>
+ 		<div class="font">
+ 			{{v.productName}}
+ 		</div>
+ 		<div>
+ 			<span class="jg">{{v.productPrice}}</span>
+ 			<button class="pull-right bb">去筹单</button>
+ 			
+ 		</div>
+ 	</div>
+ 	{{/if}}
+ 	{{/each}}
+ 	<div style="width: 100%; position: fixed; left: 0px; bottom: 0px; z-index: 9999;"><div style="position: absolute; right: 0px; top: -19px; width: 48px; height: 19px; background: url(&quot;https://mobaders.oss-cn-beijing.aliyuncs.com/images/close.png&quot;) 0px 0px no-repeat;"></div><a href="http://d1.mobaders.com/j2/c/5829132f78405d309d4a1633/58ef0a4d2aa889cb5b029d8c" style="display: inline;"><img style="vertical-align: bottom;" width="100%" src="https://mobaders.oss-cn-beijing.aliyuncs.com/uploads/1069.jpg"></a></div>
+ </script>
+</body>
+</html>

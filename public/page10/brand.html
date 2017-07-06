@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>10-品牌功能界面</title>
+    <link href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/page10/brand.css">
+    <link rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+<div class="head">
+    <div class="back"><a href="../../index.html" class="header_logo"></a></div>
+    <div class="download"><a href="#"></a></div>
+</div>
+<!--搜索部分-->
+<form action="">
+    <div class="search1 clearfix">
+        <div class="search_left">
+            <input type="text" placeholder="请输入你想比价的商品"/>
+        </div>
+        <div class="search_right">
+            <input type="submit" value="搜索"/>
+        </div>
+    </div>
+</form>
+<!--首页品牌大全-->
+<form action="" id="allForm">
+    <div class="nav">
+        <a href="../../index.html">首页 > </a>
+        <a href="#">品牌大全</a>
+    </div>
+    <div class="hot">热门品牌排行</div>
+    <div class="list_body">
+        <!--渲染-->
+    </div>
+</form>
+<div class="foot"></div>
+<script type="text/template" id="brand_list_body">
+    {{each result as v i}}
+    <div class="list" data-id="{{v.categoryId}}">
+        <a href="brand_title.html?{{v.brandTitleId}}">{{v.brandTitle}}</a>
+        <span class="glyphicon glyphicon-menu-down"></span>
+    </div>
+    {{/each}}
+</script>
+<script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../node_modules/template.js"></script>
+<script src="../../js/page10/brand.js"></script>
+</body>
+</html>

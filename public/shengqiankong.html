@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/shengqiankong.css"/>
+    <script src="../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- top顶部-->
+        <div class="header SQKheader">
+            <span href="#" class="backBtn glyphicon glyphicon-menu-left"></span>
+            省钱控，最新优惠
+            <a href="#" class="downUp"></a>
+        </div>
+    </header>
+    <div class="recommend">
+        <ul id="tuijianUl">
+
+        </ul>
+        <div class="pageBtn">
+            <div class="pageLeft"><a href="javascript:;" id="pageLeftBtn">上一页</a></div>
+            <div class="pageSelect">
+                <select id="pageBox">
+                </select>
+            </div>
+            <div class="pageRight"><a href="javascript:;" id="pageRightBtn">下一页</a></div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="#">
+            <div class="footerComment mianbaoxie">
+                <span>首页</span> > <span>省钱控</span>
+            </div>
+        </a>
+        <div class="footerBottom">
+            <div class="footerBottomTop">
+                <a href="#" class="a1">登录</a>
+                <a href="#" class="a2">注册</a>
+                <a href="#" class="a3"><img src="../images/top.jpg" alt=""/>&nbsp;返回顶部</a>
+            </div>
+            <div class="footerBottomB">
+                <p><a href="#">手机APP下载</a> <span>慢慢买手机版--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../node_modules/template-native.js"></script>
+<script src="../js/shengqiankong.js"></script>
+
+<script type="text/template" id="shengqiangTemplate">
+    <%for(var i=0;i< result.length ; i++){%>
+    <li>
+        <a href="../public/zl.html?id=<%=result[i].productId%>">
+            <div class="tuijianLeft"><%=#result[i].productImg2%></div>
+            <div class="tuijianRight">
+                <p class="p1"><%=result[i].productName%>&nbsp; <span><%=result[i].productPinkage%></span> </p>
+                <p class="p2">
+                    <span><%=result[i].productFrom%></span> | <span><%=result[i].productTime%></span>
+                    <span class="pinglun"><%=result[i].productComCount%></span>
+                </p>
+            </div>
+        </a>
+    </li>
+    <%}%>
+</script>
+</html>

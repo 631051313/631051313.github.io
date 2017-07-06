@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sheng.css" />
+	<script src="../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid top" >
+    		<div class="row">
+			<div class="col-xs-3">
+				<i id="back" class="glyphicon glyphicon-chevron-left conlfet"></i>
+				</div>
+				<div class="col-xs-7 topnb">省钱控-最新优惠</div>
+					<div class="col-xs-2">
+						<img src="../images/header_app.png"  id="tu"/>						
+					</div>
+			</div>
+    	</div>	
+		<div id="con">
+			
+		</div>	
+			
+		<div class="container-fluid" style="margin-top: 10px;" id="jj">
+			<div class="col-xs-4">
+				<button type="button" style="width: 100%;  padding: 5px 0 5px 0;" id="uppage">上一页</button>
+			</div>
+			<div class="col-xs-4">
+				<select style="width: 100%;  padding: 5px 0 5px 0 ; text-align: center;" id="selct">
+				</select>
+				
+			</div>
+			<div class="col-xs-4" >
+				<button  style="width: 100%; padding: 5px 0 5px 0;" id="downpage">下一页</button>
+				</div>
+		</div>	
+		
+		
+			<div class="container-fluid" id="bot">
+    		<div class="col-xs-4">登陆</div>
+    		<div class="col-xs-4">注册</div>
+    		<div class="col-xs-4">返回顶部</div>
+    	</div>
+    	<div id="bott" class="container">
+    		<p><span style="color: red;"> 手机APP下载</span>&nbsp;<span style="color: #000000;">慢慢买手机版</span>--掌上比价平台</p>
+    			<p><a href="#">m manmanbuy.com</a></p>
+    	</div>
+		
+		
+		
+		<script src="../node_modules/jquery/jquery-2.2.2.js"></script>
+     <script src="../js/iscroll.js"></script>
+<script src="../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../js/fastclick.js"></script>
+ <script src="../js/sheng.js"></script>
+<script src="../js/template-debug.js"></script>
+<script type="text/template" id="list">
+		{{each result as v i}}
+		<a href="../public/zl.html?proid={{v.productId}}">
+		<div class="container-fluid mr" style="margin-top: 10px;">
+				<div class="col-xs-4 imgb">
+					{{#v.productImg2}}
+					
+				</div>
+				<div class="col-xs-8">
+					<div class="pname">{{#v.productName}}&nbsp;&nbsp;<span>{{#v.productPinkage}}</span></div>
+					<div>
+						<div class="pull-left pdate">
+						{{#v.productFrom}} | {{#v.productTime}}
+						</div>
+						<div class="pull-right about">
+							{{#v.productComCount}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>	
+		{{/each}}
+		
+	
+	
+</script>
+	</body>
+</html>

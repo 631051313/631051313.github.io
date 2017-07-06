@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="./node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <script src="./node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- top顶部-->
+    <div class="header">
+        <a href="#" class="log">
+            <h1>慢慢买比价网</h1>
+        </a>
+        <a href="#" class="downUp"></a>
+    </div>
+    <!-- 头部搜索框-->
+    <div class="searchBox">
+        <input type="text" placeholder="请输入你想比价的商品" class="search"/>
+        <input type="submit" class="submit" value="搜索"/>
+    </div>
+</header>
+
+<div class="menu">
+    <ul class="clearfix" id="menuUl">
+
+    </ul>
+</div>
+<div class="recommend">
+    <a href="./public/shengqiankong.html">
+        <div class="footerComment">
+            <span>超值折扣推荐</span>
+            <img src="images/more.png" alt=""/>
+        </div>
+    </a>
+
+    <ul id="tuijianUl">
+
+    </ul>
+    <div class="message">
+        <a href="./public/shengqiankong.html"><p>更多优惠信息>></p></a>
+    </div>
+</div>
+<footer>
+    <a href="#">
+        <div class="footerComment">
+            <span>品牌排行</span>
+            <img src="./images/more.png" alt=""/>
+        </div>
+    </a>
+    <div class="footerBottom">
+        <div class="footerBottomTop">
+            <a href="#" class="a1">登录</a>
+            <a href="#" class="a2">注册</a>
+            <a href="#" class="a3"><img src="./images/top.jpg" alt=""/>&nbsp;返回顶部</a>
+        </div>
+        <div class="footerBottomB">
+            <p><a href="#">手机APP下载</a> <span>慢慢买手机版--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="./node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="./node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./node_modules/template-native.js"></script>
+<script src="./js/index.js"></script>
+<script type="text/template" id="menuTemplate">
+    <%for(var i=0;i< result.length ; i++){%>
+    <%if(i>7){%>
+    <li class="checkShow isShow">
+        <%if(i==8){%>
+        <a href="./public/pageZJY/index.html">
+        <%}else if(i==9){%>
+            <a href="haha9.html">
+        <%}else if(i==10){%>
+                <a href="./public/pageZJY/nav.html">
+        <%}else if(i==11){%>
+                    <a href="./public/page10/brand.html">
+        <%}%>
+
+        <p class="p1"><%=#result[i].img%></p>
+        <p class="p2"><%=result[i].name%></p>
+        </a>
+    </li>
+    <%}else{%>
+    <li>
+        <%if(i==0){%>
+        <a href="./public/bijia.html">
+        <%}else if(i==1){%>
+        <a href="./public/shengqiankong.html">
+        <%}else if(i==2){%>
+        <a href="./public/page4/discount.html">
+        <%}else if(i==3){%>
+        <a href="./public/pageZJY/baicaijia.html">
+        <%}else if(i==4){%>
+        <a href="./public/shengqiankong.html">
+        <%}else if(i==5){%>
+        <a href="./public/page7/coupon.html">
+        <%}else if(i==6){%>
+        <a href="haha6.html">
+        <%}else if(i==7){%>
+        <a href="#">
+        <%}%>
+
+        <%if(i==7){%>
+        <p class="p1" id="gengduo"><%=#result[i].img%></p>
+        <%}else{%>
+        <p class="p1"><%=#result[i].img%></p>
+        <%}%>
+        <p class="p2"><%=result[i].name%></p>
+        </a>
+    </li>
+    <%}%>
+    <%}%>
+</script>
+
+<script type="text/template" id="tuijianTemplate">
+    <%for(var i=0;i< result.length ; i++){%>
+    <li>
+        <a href="./public/zl.html?id=<%=result[i].productId%>">
+            <div class="tuijianLeft"><%=#result[i].productImg2%></div>
+            <div class="tuijianRight">
+                <p class="p1"><%=result[i].productName%>&nbsp; <span><%=result[i].productPinkage%></span> </p>
+                <p class="p2">
+                    <span><%=result[i].productFrom%></span> | <span><%=result[i].productTime%></span>
+                    <span class="pinglun"><%=result[i].productComCount%></span>
+                </p>
+            </div>
+        </a>
+    </li>
+    <%}%>
+</script>
+</html>

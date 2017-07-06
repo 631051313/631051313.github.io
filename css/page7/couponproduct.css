@@ -1,0 +1,90 @@
+/*ÓÅ»ÝÈ¯ÁÐ±í*/
+.body > .reminder{
+    font-size: 12px;
+    text-align: center;
+    color:#999;
+    margin: 8px 0;
+}
+.body .right{
+    width: 100%;
+}
+.body .right ul{
+    width: 100%;
+}
+.body .right ul li{
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.body #coupon_info_body li a{
+    display: block;
+    width: 100%;
+}
+.body #coupon_info_body li .pic{
+    float: left;
+    width: 100px;
+    height: 80px;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+.body #coupon_info_body li .pic img{
+    width: 100%;
+    height: 100%;
+}
+.body #coupon_info_body li .info{
+    padding-right: 30px;
+    margin-left: 110px;
+    position: relative;
+}
+.body #coupon_info_body li .info .time{
+    font-size: 12px;
+    color:#EE7700;
+    margin-top: 10px;
+}
+.body #coupon_info_body li .info .glyphicon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    right:0;
+    top:50%;
+    /*margin-top: -50%;*/
+}
+/*ÂÖ²¥Í¼*/
+.lbt{
+    background-color: #ccc;
+    opacity: 0.8;
+    z-index: 3;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display:none;
+}
+.lbt .carousel{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: -100px -100px;
+    z-index: 5;
+    top: 50%;
+    left:50%;
+}
+.lbt .carousel .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+.lbt .carousel .carousel-inner .item {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: -80px -80px;
+    opacity: 1 !important;
+}
+.lbt .carousel .carousel-inner .item img{
+    width: 100%;
+    height: 100%;
+    opacity: 1!important;
+}

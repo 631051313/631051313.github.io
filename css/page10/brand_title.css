@@ -1,0 +1,174 @@
+/*品牌标题对应的十大品牌*/
+#allForm .nav a:nth-of-type(3){
+    color:#000;
+}
+#allForm  .hot{
+    border:none;
+    padding-left: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+#allForm .list_body{
+    background-color: #ebebeb;
+    padding: 10px;
+}
+#allForm .list_body a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+#allForm .list_body .number{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #c9c9c9;
+    text-align: center;
+    float: left;
+    color:#fff;
+    margin-right: 10px;
+}
+/*前三名背景设置*/
+#allForm .list_body li:nth-of-type(1) .number{
+    background-color: #f00;
+}
+#allForm .list_body li:nth-of-type(2) .number{
+    background-color: #ff9314;
+}
+#allForm .list_body li:nth-of-type(3) .number{
+    background-color: #8adf5b;
+}
+#allForm .list_body .a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+#allForm .list_body .info{
+    position: relative;
+    padding-left: 30px;
+}
+#allForm .list_body .info h3{
+    font-size: 16px;
+    color:#000;
+}
+#allForm .list_body .info .time{
+    font-size: 12px;
+    margin-top: 3px;
+}
+#allForm .list_body .info span{
+    position: absolute;
+    top: 30%;
+    right:0;
+}
+/*评论部分*/
+.list_body2 li a{
+    display: block;
+    padding: 10px;
+}
+.list_body2 .pic{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    float: left;
+    margin-right: 10px;
+}
+
+.list_body2 .info .title{
+    min-height: 44px;
+    line-height: 22px;
+    font-size: 14px;
+    color:#333;
+}
+.list_body2 .info .price{
+    color:#ea3900;
+    font-size: 18px;
+    margin-top: 4px;
+}
+.list_body2 .info .other span{
+    font-size: 12px;
+    color:#999;
+    margin-right: 10px;
+}
+/*底部部分*/
+.foot .foot_info{
+    background-color: #f2f2f2;
+    padding-bottom: 15px;
+}
+.foot .foot_info ul{
+    width: 100%;
+    height: 34px;
+    margin-bottom: 15px;
+}
+.foot .foot_info li{
+    padding: 0;
+}
+.foot .foot_info li a{
+    display: block;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left:none;
+    color:#000;
+}
+.foot .foot_info p{
+    text-align: center;
+    font-size: 12px;
+}
+.foot .foot_info p a:nth-of-type(1){
+    color:#f00;
+}
+.foot .foot_info p a:nth-of-type(2){
+    color:#000;
+}
+.foot .foot_info p a:nth-of-type(3){
+    color:#ccc;
+}
+/*评论部分*/
+.list_body3 li a{
+    display: block;
+    padding: 10px;
+}
+.list_body3 .pic{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    float: left;
+    margin-right: 10px;
+}
+.list_body3 .info{
+    color: #9f9f9f;
+}
+.list_body3 .pic img{
+    width: 100%;
+    height: 100%;
+}
+.list_body3 li .product .name{
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.list_body3 li .product .name p{
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+.list_body3 li .product span{
+    background-image: url('star.svg');
+    background-size: contain;
+    width: 90px;
+    height: 18px;
+    padding-top: 3px;
+    float: left;
+}
+.list_body3 li .product em{
+    float: right;
+}
+.list_body3 li .product{
+    background-color: #f7f3ff;
+    padding: 5px;
+}

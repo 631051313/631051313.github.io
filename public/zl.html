@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/zl.css" />
+  
+   
+    <script src="../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+</head>
+<body id="scr">
+    	<div class="container-fluid top" >
+    		<div class="row">
+			<div class="col-xs-4">
+				<i id="back" class="glyphicon glyphicon-chevron-left conlfet"></i>
+				</div>
+				<div class="col-xs-6 topnb">国内折扣</div>
+					<div class="col-xs-2">
+						<img src="../images/header_app.png"  id="tu"/>
+					</div>
+			</div>
+    	</div>	
+    	
+    	<div class="container-fluid" id="rong">
+    	</div>
+<script src="../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script src="../js/zl.js"></script>
+<script src="../node_modules/template-debug.js"></script>
+<script type="text/template" id="ron">
+	
+	<div class="title">{{#result[0].productName}}<span class="kj">
+			{{result[0].productPinkage}}
+			</span></div>
+	<div class="info"><span>{{#result[0].productFrom}}</span><span>{{#result[0].productTime}}</span>&nbsp;&nbsp;&nbsp;<span>{{#result[0].productTips}}</span>
+		
+		
+	</div>
+	<div class="yu container-fluid">
+		<div class="col-xs-6 lm">
+			{{result[0].productInfo}}
+		</div>
+		
+		<div class="col-xs-4">
+			{{#result[0].productImgSm}}
+		</div>
+	</div>
+	<div class="zhao">
+		{{result[0].productInfo1}}
+		<!--{{if result[0].productInfo1}}
+		#result[0].productInfo1
+		{{/if}}
+		
+		{{if result[0].productInfo2}}
+		#result[0].productInfo2
+		{{/if}}
+		-->
+		
+		
+	</div>
+	<div class="io">
+		{{#result[0].productImgLg}}
+	</div>
+	<div class="cityy">
+		{{#result[0].productCity}}
+		
+	</div>
+	
+	<div class="col-xs-12 gm">
+		<button>立即前往购买</button>
+	</div>
+		
+	<div>
+	{{#result[0].productComment}}
+		
+	</div>
+
+	<div class="appbanner  appbannerc" id="Div1" style=" margin-bottom:40px;">
+		<div class="applogo"><img src="http://m.manmanbuy.com/download/images/logo.png"></div>
+		<div class="tit">
+			慢慢买APP
+			<div class="subtit" style="">
+				<p>专注全网比价，每一次购物都在为你省钱！</p>
+
+			</div>
+		</div>
+		<div class="btn">
+			<a href="http://m.manmanbuy.com/?o=download" class="a-install">立即打开</a>
+		</div>
+	</div>
+
+	<div class="footer-cu ui-border-t">
+		<div tapmode="" class="footer-comment"><a href="#comment"></a>
+			<div class="icon-comment iconfont"></div>
+			<div class="tit">
+				评论
+			</div>
+		</div>
+
+		<div class="foot-cubtn" style=" ">
+			<ul>
+				<li id="btngo" class="footer-gobuy">
+					<div class="c" tapmode="hover"><a href="redirect.aspx?webid=0&amp;tourl=https%3a%2f%2fs.click.taobao.com%2ft%3fe%3dm%253D2%2526s%253DPTIbtuffgUkcQipKwQzePOeEDrYVVa64pRe%252F8jaAHci5VBFTL4hn2TISzVitzfotBuky%252F0Sep%252BHPAkN54P6oPlsVdwqdsN%252BQoQv7tQXCEulrQo6fEmnajgG2m%252Fh2Pn0ItyngDWwbZAlMpHNhyg%252BxHnEqY%252Bakgpmw&amp;y=cu&amp;cxid=187209" target="_blank"></a>
+						<div class="icon-gobuy iconfont"></div>
+						<div class="tit">
+							前往购买
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</script>
+</body>
+</html>

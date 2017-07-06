@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>慢慢买比价网</title>
+    <link href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/pageZJY/bcj.css" />
+  	
+   
+    <script src="../../node_modules/html5shiv/3.7.2/html5shiv.min.js"></script>
+</head>
+<body id="scr">
+    	<div class="container-fluid top" >
+    		<div class="row">
+			<div class="col-xs-3">
+				<i id="back" class="glyphicon glyphicon-chevron-left conlfet"></i>
+			</div>
+				<div class="col-xs-7 topnb">白菜价-淘宝内部卷</div>
+					<div class="col-xs-2">
+						<img src="../../images/header_app.png"  id="tu"/>
+					</div>
+			</div>
+    	</div>	
+    	<!--<div class="container-fluid">-->
+    	<div class="bao" id="wrapper">
+    		<ul id="dsad">
+    			
+    		</ul>
+    	</div>
+    	<!--</div>-->	
+    	<div id="myscroll">
+    	<ul class="container-fluid" id="listall">
+    	
+    	</ul>
+    	</div>
+    	<div class="container-fluid" id="bot">
+    		<div class="col-xs-4">登陆</div>
+    		<div class="col-xs-4">注册</div>
+    		<div class="col-xs-4">返回顶部</div>
+    	</div>
+    	<div id="bott" class="container">
+    		<p><span style="color: red;"> 手机APP下载</span>&nbsp;<span style="color: #000000;">慢慢买手机版</span>--掌上比价平台</p>
+    			<p><a href="#">m manmanbuy.com</a></p>
+    	</div>
+    	
+    	
+</header>
+<script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+     <script src="../../js/pageZJY/iscroll.js"></script>
+<script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../js/pageZJY/fastclick.js"></script>
+ <script src="../../js/pageZJY/bcj.js"></script>
+<script src="../../js/pageZJY/template-debug.js"></script>
+
+
+
+
+
+
+
+<script type="text/template" id="nav">
+				
+				{{each result as v i }}
+				{{if i==0}}
+    			<li><a href="#" class="currentli" data-id ="{{v.titleId}}">{{v.title}}</a></li>
+    			{{/if}}
+    			{{if i!=0}}
+    			<li><a href="#"  data-id ="{{v.titleId}}">{{v.title}}</a></li>
+    			{{/if}}
+    			{{/each}}
+</script>
+
+
+<script type="text/template" id="list">
+	
+	{{each result as v i}}
+	<li class="biaolist" style="overflow: hidden ; margin-bottom: 10px;">
+ 	   			<div class="col-xs-5">
+ 	   				{{#v.productImg}}
+ 	   			</div>
+    			<div class="col-xs-7 baoyou">
+    				<!--<p>[包邮]双十一红包今日开启</p>-->
+    				<div class="prn">{{#v.productName}}</div>
+    				<div class="pri">{{#v.productPrice}}</div>
+    				<div class="bor">
+    					{{#v.productCouponRemain}}
+    				</div>
+    				<div>
+    				<span class="zxc">	
+    					{{#v.productCoupon}}
+    				</span>
+    				<span class="cxz">
+    					{{#v.productHref}}
+    				</span>	
+    				</div>
+    			</div>	
+    	</li>
+	{{/each}}	
+</script>
+<script src="../../js/pageZJY/demoUtils.js"></script>
+<script type="text/javascript">
+	
+//		var mysc=new IScroll("#wrapper",{
+//				//mouseWheel:true,
+//				//Scrollbars:true,
+//				//ScrollX:true,
+//				//hScrollbar:true, 
+//				//vScroll:false
+////				freeScroll:true
+//			})
+	
+	
+	var	mysc = new IScroll('#wrapper', {
+hScrollbar:false,  //禁止横向滚动
+vScroll:true,      //为true时允许y轴滚动
+bounce:false,      //当滚动器到达容器边界时他将执行一个小反弹动画。在老的或者性能低的设备上禁用反弹对实现平滑的滚动有帮助。
+click:true,    　   //如果你想你的应用程序响应click事件，那么该设置次属性为true
+hideScrollbar: true //是否隐藏滚动条  
+});
+	
+	
+</script>
+
+</body>
+</html>

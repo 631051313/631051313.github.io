@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>10-品牌大全标题</title>
+    <link href="../../node_modules/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/page10/brand.css">
+    <link rel="stylesheet" href="../../css/page10/brand_title.css">
+    <link rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+<div class="head">
+    <div class="back"><a href="../../index.html" class="header_logo"></a></div>
+    <div class="download"><a href="#"></a></div>
+</div>
+<!--搜索部分-->
+<form action="">
+    <div class="search1 clearfix">
+        <div class="search_left">
+            <input type="text" placeholder="请输入你想比价的商品"/>
+        </div>
+        <div class="search_right">
+            <input type="submit" value="搜索"/>
+        </div>
+    </div>
+</form>
+<!--首页品牌大全-->
+<form action="" id="allForm">
+    <div class="nav">
+        <a href="../../index.html">首页 > </a>
+        <a href="brand.html">品牌大全 > </a>
+        <a href="#">平板电视哪个牌子好</a>
+    </div>
+    <div class="hot">平板电视哪个牌子好</div>
+    <div class="list_body">
+        <ul class="clearfix brand_title">
+            <!--品牌大全渲染-->
+        </ul>
+    </div>
+    <!--销量排行-->
+    <div class="hot">平板电视产品销量排行</div>
+    <div class="list_body2">
+        <ul class="clearfix brand_title2">
+            <!--销量排行渲染-->
+        </ul>
+    </div>
+    <!--最新评论-->
+    <div class="hot">平板电视最新评论</div>
+    <div class="list_body3">
+        <ul class="clearfix brand_title3">
+            <!--最新评论-->
+        </ul>
+    </div>
+</form>
+<div class="foot">
+    <div class="foot_info">
+        <ul>
+            <li class="col-xs-4"><a href="#">登录</a></li>
+            <li class="col-xs-4"><a href="#">注册</a></li>
+            <li class="col-xs-4"><a href="#">返回顶部</a></li>
+        </ul>
+        <p><a href="#">手机APP下载&nbsp</a><a href="#">慢慢买手机版&nbsp</a><span>--掌上比价平台</span></p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+<!--品牌大全模板-->
+<script type="text/template" id="brand_title_list">
+    {{each result as v i}}
+    <li class="clearfix">
+    <a href="#?{{v.brandId}}">
+        <div class="number">{{i+1}}</div>
+        <div class="info">
+            <h3>{{v.brandName}}</h3>
+            <div class="time">{{v.brandInfo}}</div>
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </div>
+    </a>
+    </li>
+    {{/each}}
+</script>
+<!--销量排行模板-->
+<script type="text/template" id="brand_title_list2">
+    {{each result as v i}}
+    <li class="clearfix" data-id="v.brandTitleId">
+        <a href="#" class="clearfix">
+            <div class="pic">{{#v.productImg}}</div>
+            <div class="info">
+                <div class="title">{{v.productName}}</div>
+                <div class="price">{{v.productPrice}}</div>
+                <div class="other"><p><span>{{v.productQuote}}</span><span>{{v.productCom}}</span></p></div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<!--最新评论模板-->
+<script type="text/template" id="brand_title_list3">
+    {{each result as v i}}
+   <li class="clearfix">
+       <a href="#" class="clearfix">
+           <div class="pic"><img src="../../images/tv.jpg" alt=""/></div>
+           <div class="info">
+               <div class="title">{{v.comFrom}}</div>
+           </div>
+       </a>
+       <a>
+           <div class="product">
+               <div class="name"><p>{{v.comName}}</p><span></span><em>{{v.comTime}}</em></div>
+               <div class="con">{{v.comContent}}</div>
+           </div>
+       </a>
+   </li>
+    {{/each}}
+</script>
+<script src="../../node_modules/jquery/jquery-2.2.2.js"></script>
+<script src="../../node_modules/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../node_modules/template.js"></script>
+<script src="../../js/page10/brand_title.js"></script>
+</body>
+</html>
